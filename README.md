@@ -19,3 +19,4 @@ Tourpal is a journalling app in which you can store all your travelling experien
  <ul>
   <li>After setting up the project in the appwrite console, clone this github repo using -</li>
   </ul>
+  ``` npm install ```
