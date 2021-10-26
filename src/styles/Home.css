@@ -1,0 +1,7 @@
+.home-ctn {
+  background-image: url('../assests/Snow-sunset.gif');
+  background-size: cover;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}

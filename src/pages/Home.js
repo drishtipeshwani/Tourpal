@@ -1,15 +1,13 @@
 import React from 'react'
 import {
-    Flex,
     Container,
     Heading,
     Stack,
     Text,
     Button,
-    Image
 } from '@chakra-ui/react';
 import { api } from '../api/appwrite'
-import Illustration from '../assests/Illustration.png'
+import '../styles/Home.css'
 import { ChakraProvider } from "@chakra-ui/react"
 
 function Home() {
@@ -23,9 +21,9 @@ function Home() {
     }
 
     return (
-        <div className='home'>
+        <div className='home-ctn'>
             <ChakraProvider>
-                <Container maxW={'5xl'}>
+                <Container>
                     <Stack
                         textAlign={'center'}
                         align={'center'}
@@ -36,26 +34,22 @@ function Home() {
                             fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
                             lineHeight={'110%'}>
                             Welcome to{' '}
-                            <Text as={'span'} color={'orange.400'}>
-                                TourPals
+                            <Text as={'span'} color={'#583D72'}>
+                                TourPal
                             </Text>
                         </Heading>
-                        <Text color={'gray.500'} maxW={'3xl'}>
-                            Bringing the travel community closer.
+                        <Text color={'white'} maxW={'3xl'} fontWeight='bold' fontSize='xl'>
+                            Treasure all your beautiful travel experiences at one place with Tourpal.
                         </Text>
                         <Button
-                            rounded={'full'}
                             px={6}
                             colorScheme={'orange'}
                             bg={'orange.400'}
-                            _hover={{ bg: 'orange.500' }}
+                            _hover={{ bg: 'white', color: 'black' }}
                             onClick={loginwithGoogle}
                         >
                             Login with Google
                         </Button>
-                        <Flex w={'full'}>
-                            <Image src={Illustration} alt='illustration' />
-                        </Flex>
                     </Stack>
                 </Container>
             </ChakraProvider>

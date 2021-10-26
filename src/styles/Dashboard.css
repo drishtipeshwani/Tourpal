@@ -1,0 +1,10 @@
+.appwrite-link {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 999;
+}
+
+.appwrite-link img {
+  width: 160px;
+}

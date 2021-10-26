@@ -8,6 +8,7 @@ import {
 import './styles/App.css';
 import Home from './pages/Home'
 import Dashboard from './pages/Dashboard'
+import PostForm from './components/PostForm';
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
           <Route path="/" component={Home} exact>
           </Route>
           <Route path="/dashboard" component={Dashboard} exact>
+          </Route>
+          <Route path="/addpost" component={PostForm} exact>
           </Route>
         </Switch>
       </Router>
