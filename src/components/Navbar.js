@@ -43,7 +43,10 @@ function Navbar() {
                 />
                 <HStack spacing={8} alignItems={'center'}>
                     <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
-                        <Button onClick={logoutUser} color='white'>Logout</Button>
+                        <Button onClick={logoutUser} px={6}
+                            bg={'#583D72'}
+                            color='white'
+                            _hover={{ bg: 'transparent', color: 'black', border: '2px solid black' }}>Logout</Button>
                     </HStack>
                 </HStack>
             </Flex>

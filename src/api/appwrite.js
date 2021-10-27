@@ -3,8 +3,8 @@ import { Appwrite } from "appwrite";
 var appwrite = new Appwrite();
 
 appwrite
-    .setEndpoint('http://localhost/v1') // Set your endpoint
-    .setProject('6167fbb64f1f8') // Your Appwrite Project UID
+    .setEndpoint('') // Set your endpoint
+    .setProject('') // Your Appwrite Project UID
     ;
 
 
@@ -32,7 +32,7 @@ export const api = {
     },
 
     postData: async (date, location, content, userId) => {
-        let promise = appwrite.database.createDocument('61713e3e5257a', { "date": date, "location": location, "experience": content }, [`user:${userId}`], [`user:${userId}`]);
+        let promise = appwrite.database.createDocument('CollectionId', { "date": date, "location": location, "experience": content }, [`user:${userId}`], [`user:${userId}`]);
 
         promise.then(function (response) {
             console.log(response); // Success
@@ -42,7 +42,7 @@ export const api = {
     },
 
     getData: async () => {
-        let promise = appwrite.database.listDocuments('61713e3e5257a');
+        let promise = appwrite.database.listDocuments('CollectionId');
         return promise.then(function (response) {
             //response.documents is a array
             return response.documents
