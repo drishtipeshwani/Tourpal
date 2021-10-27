@@ -2,18 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { ChakraProvider, Heading, VStack, Button, Image, Link } from "@chakra-ui/react"
 import Navbar from '../components/Navbar'
 import Post from '../components/Post'
-import { api } from '../api/appwrite'
-import { Appwrite } from "appwrite";
 import '../styles/Dashboard.css'
-
-
-var appwrite = new Appwrite();
-
-appwrite
-    .setEndpoint('http://localhost/v1') // Set your endpoint
-    .setProject('6167fbb64f1f8') // Your Appwrite Project UID
-    ;
-
 
 function Dashboard() {
 
