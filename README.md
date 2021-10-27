@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="https://github.com/drishtipeshwani/Tourpal/blob/master/logo.png" alt="Appwrite logo"/>
+</p>
 
 
 ## Tourpal
